@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <title>Document</title>
-</head>
-<body>
-    <header>Night Picks</header>
-</body>
+  </head>
+  <body>
+    <header>Night Picks for 1</header>
+    </div>
+
+    <div style="width: 200px;" class="input-field col s12">
+      <select >
+        <option value="" disabled selected>Choose your option</option>
+        <option value="tequila">Tequila</option>
+        <option value="gin">Gin</option>
+        <option value="vodka">Vodka</option>
+        <option value="bourbon">Bourbon</option>
+        <option value="whiskey">Whiskey</option>
+      </select>
+      <label>Select Your Alcohol Choice:</label>
+    </div>
+
+    <div style="width: 200px;" class="input-field col s12">
+      <select>
+        <option value="" disabled selected>Choose your option</option>
+        <option value="adventure">Action-Adventure</option>
+        <option value="biography">Biography</option>
+        <option value="comedy">Comedy</option>
+        <option value="documentary">Documentary</option>
+        <option value="horror">Horror</option>
+      </select>
+      <label>Select Your movie Genre:</label>
+    </div>
+
+    <div style="width: 200px;" class="input-field col s12">
+      <select>
+        <option value="" disabled selected>Choose your option</option>
+        <option value="netflix">Netflix</option>
+        <option value="hbo">HBO</option>
+        <option value="hulu">Hulu</option>
+        <option value="amazon">AmazonPrimeVideo,</option>
+        <option value="itunes">iTunes</option>
+      </select>
+      <label>Select Your Provider:</label>
+    </div>
+
+    <button class="waves-effect waves-light btn">Submit</button>
+   
+    <script>
+      $(document).ready(function () {
+        $("select").formSelect();
+      });
+    </script>
+  </body>
 </html>
