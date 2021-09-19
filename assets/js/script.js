@@ -1,5 +1,5 @@
 function randomCocktail(){
-    var number = Math.floor(Math.random() * 100);
+    var number = Math.floor(Math.random() * 30);
     var searchTermCocktail = document.querySelector('#searchTermCocktail').value
     let response = fetch("https://the-cocktail-db.p.rapidapi.com/filter.php?i="+ searchTermCocktail, {
       "method": "GET",
