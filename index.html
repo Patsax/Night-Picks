@@ -3,48 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="icon" href="./Screen Shot 2021-09-16 at 8.57.27 PM.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Night Picks</title>
   </head>
   <body>
-    <header>Night Picks for 1</header>
-  
-    <div style="width: 200px;" class="input-field col s12">
-      <select id="searchTermCocktail" >
-        <option value="" disabled selected>Choose your option</option>
-        <option value="Tequila">Tequila</option>
-        <option value="Gin">Gin</option>
-        <option value="Vodka">Vodka</option>
-      </select>
-      <button onclick="randomCocktail()">Get Cocktail</button>
-    <div id="response-container-cocktail"></div>
-    <script src="assets/js/script.js"></script>
-  </div>
+    <div class="options hoverable">
+      <header>Night Picks for 1</header>
 
-  <div style="width: 200px;" class="input-field col s12">
-    <label>Select Your movie Genre:</label>
-    <select id="searchTermGenre">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="Action-Adventure">Action-Adventure</option>
-      <option value="Biography">Biography</option>
-      <option value="Comedy">Comedy</option>
-      <option value="Documentary">Documentary</option>
-      <option value="Horror">Horror</option>
-    </select>
-  </div>
+      <div style="width: 200px" class="input-field col s12">
+        <select class="red-text" id="searchTermCocktail">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="Tequila">Tequila</option>
+          <option value="Gin">Gin</option>
+          <option value="Vodka">Vodka</option>
+        </select>
+        <label for="">Select your booze:</label>
+        <button
+          onclick="randomCocktail()"
+          class="hoverable red darken-1 waves-effect waves-light btn"
+        >
+          Get Cocktail
+        </button>
+        <div id="response-container-cocktail"></div>
+        <script src="assets/js/script.js"></script>
+      </div>
 
-  <div style="width: 200px;" class="input-field col s12">
-    <label>Select Your Provider:</label>
-    <select id="searchTermService">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="Netflix">Netflix</option>
-      <option value="Hulu">Hulu</option>
-      <option value="AmazonPrimeVideo">AmazonPrimeVideo</option>
-      <option value="iTunes">iTunes</option>
-    </select>  
-  </div>
-  <div id="response-container-movie"></div>
-  <script src="assets/js/script.js"></script>
-  <button onclick="randomMovie()" class="waves-effect waves-light btn">Submit</button>
+      <div style="width: 200px" class="input-field col s12">
+        <select id="searchTermGenre">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="Action-Adventure">Action-Adventure</option>
+          <option value="Biography">Biography</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Documentary">Documentary</option>
+          <option value="Horror">Horror</option>
+        </select>
+        <label>Select Your movie Genre:</label>
+      </div>
+
+      <div style="width: 200px" class="input-field col s12">
+        <select id="searchTermService">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="Netflix">Netflix</option>
+          <option value="Hulu">Hulu</option>
+          <option value="AmazonPrimeVideo">AmazonPrimeVideo</option>
+          <option value="iTunes">iTunes</option>
+        </select>
+        <label>Select Your Provider:</label>
+      </div>
+      <div id="response-container-movie"></div>
+      <script>
+        $(document).ready(function () {
+          $("select").formSelect();
+        });
+      </script>
+      <script src="assets/js/script.js"></script>
+      <button
+        onclick="randomMovie()"
+        class="hoverable red darken-1 waves-effect waves-light btn"
+      >
+        Get Movie
+      </button>
+    </div>
   </body>
 </html>
-
