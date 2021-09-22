@@ -17,7 +17,7 @@
   margin: 20px;
 }
 header {
-  background: url(/assets/images/Screen\ Shot\ 2021-09-16\ at\ 8.57.27\ PM.png)
+  background: url("/assets/images/Screen\ Shot\ 2021-09-16\ at\ 8.57.27\ PM.png")
     no-repeat;
   background-position: center;
   background-size: contain;
