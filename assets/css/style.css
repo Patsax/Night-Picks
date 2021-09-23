@@ -16,6 +16,11 @@ body {
   width: 250px;
 }
 
+.options p {
+  color: #dc7676;
+  font-weight: bolder;
+}
+
 .hero {
   text-align: center;
   margin: 20px;
@@ -49,6 +54,7 @@ footer {
 
 #response-container-cocktail, #response-container-movie {
   border: 5px solid #EE6E73;
+  border-radius: 5px;
   margin: 5px;
   text-align: center;
 }
