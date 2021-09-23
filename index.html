@@ -32,6 +32,7 @@
 
     <div class="options hoverable card-panel">
       <p>Night Picks for 1</p>
+
       <div style="width: 200px" class="input-field col s12">
         <select class="red-text" id="searchTermCocktail">
           <option value="" disabled selected>Choose your option</option>
@@ -40,15 +41,16 @@
           <option value="Vodka">Vodka</option>
         </select>
         <label for="">Select your booze:</label>
-        <button
-          onclick="randomCocktail()"
-          class="hoverable red darken-1 waves-effect waves-light btn"
-        >
-          Get Cocktail
-        </button>
-        <div id="response-container-cocktail"></div>
-        <script src="assets/js/script.js"></script>
       </div>
+
+      <button
+        onclick="randomCocktail()"
+        class="hoverable red darken-1 waves-effect waves-light btn"
+        >
+        Get Cocktail
+      </button>
+
+      <div id="response-container-cocktail"></div>
 
       <div style="width: 200px" class="input-field col s12">
         <select id="searchTermGenre">
@@ -72,22 +74,27 @@
         </select>
         <label>Select Your Provider:</label>
       </div>
-      <div id="response-container-movie"></div>
-      <script>
-        $(document).ready(function () {
-          $("select").formSelect();
-        });
-      </script>
-      <script src="assets/js/script.js"></script>
+
       <button
         onclick="randomMovie()"
         class="hoverable red darken-1 waves-effect waves-light btn"
       >
         Get Movie
       </button>
+      
+      <div id="response-container-movie"></div>
+
+      <script>
+        $(document).ready(function () {
+          $("select").formSelect();
+        });
+      </script>
     </div>
+    
     <footer>
-      <p>Made by: AL, AB, PS, LR</p>
+      <p>Made by: AB, AL, LR, PS</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
